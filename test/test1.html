@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/jQuizler.css" />
+
+	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>Сколько существует основных этапов продаж?</h3>",
+        answers: [
+            "1",
+            "5",
+            "3",
+			"4",
+			"2"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Назовите 4-й этап продаж</h3>",
+        answers: [
+            "Установление контакта",
+            "Работа с возражениями",
+            "Презентация товара",
+			"Выявление потребностей",
+			"Завершение сделки"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Назовите самый важный этап продаж</h3>",
+        answers: [
+            "Установление контакта",
+            "Работа с возражениями",
+            "Презентация товара",
+			"Выявление потребностей",
+			"Завершение сделки",
+			"Все этапы важны"
+        ],
+        correct: [6]
+    },
+	{
+        type: "choose",
+        question: "<h3>Назовите третий этап продаж</h3>",
+        answers: [
+            "Установление контакта",
+            "Работа с возражениями",
+            "Презентация товара",
+			"Выявление потребностей",
+			"Завершение сделки"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Обязательно ли следовать этапам продаж?</h3>",
+        answers: [
+            "Да. Каждый хороший продажник должен уметь соблюдать данный алгоритм.",
+            "Нет. Бывают ситуации, когда это сделать невозможно."
+           
+        ],
+        correct: [2]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+<style>
+   H3 { 
+    font-size: 20px; 
+	line-height: 1.2;
+	margin-bottom:0.75em;
+   }
+  </style>
+</head>
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Тест на тему: "Этапы продаж"</h3>
+		
+        <button class="btn btn-large">Начать тест</button>
+    </div>
+</body>
+</html>

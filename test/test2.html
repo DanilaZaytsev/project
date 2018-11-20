@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/jQuizler.css" />
+
+	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>Сколько времени уходит у человека, на формирование своего мнения о собеседнике</h3>",
+        answers: [
+            "Несколько минут",
+            "Несколько встреч",
+			"Первые секуды",
+            "В первые часы знакомства"
+		
+
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Кто должен говорить больше при общении?</h3>",
+        answers: [
+            "Продавец",
+            "Потенциальный покупатель"
+      
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Каким по счету этапом продаж является установление контакта</h3>",
+        answers: [
+            "2",
+            "3",
+            "1",
+			"5",
+			"4"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>В чем отличие телефонных продаж от продаж вживую?</h3>",
+        answers: [
+            "Телефонные продажи не содержат невербалики",
+            "Телефонные продажи не передают интонации",
+            "Телефонные продажи содержат невербалику",
+			"Телефонные продажи важнее",
+        ],
+        correct: [1]
+    },
+	{
+        type: "choose",
+        question: "<h3>Нужно ли готовиться к установлению контакта заранее</h3>",
+        answers: [
+            "Нет. Все должно происходить само собой.",
+            "Да. Нужно тщательно отрепетировать что и как говорить."
+           
+        ],
+        correct: [2]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+<style>
+   H3 { 
+    font-size: 20px; 
+	line-height: 1.2;
+	margin-bottom:0.75em;
+   }
+  </style>
+</head>
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Тест на тему: "Установление контакта"</h3>
+		
+        <button class="btn btn-large">Начать тест</button>
+    </div>
+</body>
+</html>
